@@ -1,0 +1,54 @@
+{
+  "retrieved_utc": "2026-10-26T00:59:50.948822+00:00",
+  "trajectory": {
+    "session": "ses_e8d0b6bb0ffeygfOvr5vV6FFpX",
+    "messages": 433,
+    "pages": 9,
+    "sha256": "34340fc37b2c866dea7aaa0f6bc72e201b9f8651c9af08cf312b2a9a88180866"
+  },
+  "repos": {
+    "vllm": {
+      "url": "https://github.com/vllm-project/vllm.git",
+      "commit": "a7407ab44557802ca32a0ba2c2707362d7d21563",
+      "shallow": true
+    },
+    "DeepInfer": {
+      "url": "https://github.com/deepseek-ai/DeepInfer.git",
+      "commit": "553741557a57df44a46fb3ab72b6aafeaf945337",
+      "shallow": true,
+      "submodules": [
+        " f6aa38fe06cd4a0489e7730365d4e0114970a2f3 vendor/DeepEP (heads/main)",
+        "-3b25377d04b24fc6154698ded78a2bcb2c59afff vendor/DeepEP-Ascend",
+        " 1fc9c66975ee322d628b3288534ca0e9ce12a64d vendor/DeepGEMM (1fc9c66)",
+        "-3a35326271b069b8b5bf1a754435acd6cc91575b vendor/DeepGEMM-Ascend",
+        " bfa4507d935f17ebfc3d0f00ff7d3c9a4d0e5c18 vendor/DeepSelect (heads/main)",
+        " 2e5429fc5653bab6e081f09477126f731882a6a9 vendor/FlashMLA (2e5429f)"
+      ],
+      "nvidia_vendor_checkouts": {
+        "FlashMLA": {
+          "commit": "2e5429fc5653bab6e081f09477126f731882a6a9",
+          "url": "https://github.com/deepseek-ai/FlashMLA.git"
+        },
+        "DeepEP": {
+          "commit": "f6aa38fe06cd4a0489e7730365d4e0114970a2f3",
+          "url": "https://github.com/deepseek-ai/DeepEP.git"
+        },
+        "DeepGEMM": {
+          "commit": "1fc9c66975ee322d628b3288534ca0e9ce12a64d",
+          "url": "https://github.com/deepseek-ai/DeepGEMM.git"
+        },
+        "DeepSelect": {
+          "commit": "bfa4507d935f17ebfc3d0f00ff7d3c9a4d0e5c18",
+          "url": "https://github.com/deepseek-ai/DeepSelect.git"
+        }
+      }
+    },
+    "verda-sdk": {
+      "url": "https://github.com/verda-cloud/sdk-python.git",
+      "commit": "3b332c180c3b1b8db5e57dc0bb2b15fc626d4894",
+      "sdk_version": "1.25.0",
+      "installed_from": "PyPI verda==1.25.0",
+      "shallow": true
+    }
+  }
+}

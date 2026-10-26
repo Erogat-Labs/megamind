@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.ruff_cache/
+results/
+.env
+
+# Local source checkouts and full conversation (may contain private tool output).
+upstream/
+trajectory.json
+trajectory.md
+.venv-*/

@@ -1,0 +1,23 @@
+[project]
+name = "dist-megamind"
+version = "0.1.0"
+description = "Small CuTe kernel experiments on Modal B200 GPUs"
+requires-python = ">=3.12,<3.13"
+dependencies = ["modal==1.6.2"]
+
+[project.optional-dependencies]
+gpu = [
+    "torch==2.14.1",
+    "nvidia-cutlass-dsl[cu13]==4.8.1",
+    "nccl4py[cu13]==0.6.0",
+    "nvidia-nccl-cu13==2.32.3",
+]
+verda = [
+    "python-dotenv==1.2.4",
+    "verda==1.25.0",
+]
+
+[tool.uv]
+package = false
+# NCCL4Py requires 2.32.3; Torch pins 2.30.7. Validate this override remotely.
+override-dependencies = ["nvidia-nccl-cu13==2.32.3"]
